@@ -1,0 +1,24 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+LIBRARY work;
+
+ENTITY VHDL_gates IS
+	PORT
+	(
+	
+		IN_1, IN_2, IN_3 IN_4, POLARITY-CNTRL: IN BIT;
+		OUT_1, OUT_2, OUT_4,OUT_3: OUT BIT
+		);
+END VHDL_gates;
+
+ARCHITECTURE inverter OF VHDL_gates IS
+
+BEGIN
+
+OUT_1 <= IN_1 XOR POLARITY-CNTRL;
+OUT_2 <= IN_2 XOR POLARITY-CNTRL;
+OUT_3 <= IN_3 XOR POLARITY-CNTRL;
+OUT_4 <= IN_4 XOR POLARITY-CNTRL;
+
+END simple_gates;	

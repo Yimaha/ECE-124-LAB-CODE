@@ -1,0 +1,258 @@
+$comment
+	File created using the following command:
+		vcd file LogicalStep_Lab2.msim.vcd -direction
+$end
+$date
+	Sat Jun 01 16:14:49 2019
+$end
+$version
+	ModelSim Version 10.4b
+$end
+$timescale
+	1ps
+$end
+
+$scope module LogicalStep_Lab2_top_vlg_vec_tst $end
+$var reg 1 ! clkin_50 $end
+$var reg 4 " pb [3:0] $end
+$var reg 8 # sw [7:0] $end
+$var wire 1 $ leds [7] $end
+$var wire 1 % leds [6] $end
+$var wire 1 & leds [5] $end
+$var wire 1 ' leds [4] $end
+$var wire 1 ( leds [3] $end
+$var wire 1 ) leds [2] $end
+$var wire 1 * leds [1] $end
+$var wire 1 + leds [0] $end
+$var wire 1 , seg7_char1 $end
+$var wire 1 - seg7_char2 $end
+$var wire 1 . seg7_data [6] $end
+$var wire 1 / seg7_data [5] $end
+$var wire 1 0 seg7_data [4] $end
+$var wire 1 1 seg7_data [3] $end
+$var wire 1 2 seg7_data [2] $end
+$var wire 1 3 seg7_data [1] $end
+$var wire 1 4 seg7_data [0] $end
+
+$scope module i1 $end
+$var wire 1 5 gnd $end
+$var wire 1 6 vcc $end
+$var wire 1 7 unknown $end
+$var tri1 1 8 devclrn $end
+$var tri1 1 9 devpor $end
+$var tri1 1 : devoe $end
+$var wire 1 ; pb[3]~input_o $end
+$var wire 1 < seg7_data[1]~output_o $end
+$var wire 1 = seg7_data[5]~output_o $end
+$var wire 1 > seg7_data[6]~output_o $end
+$var wire 1 ? leds[0]~output_o $end
+$var wire 1 @ leds[1]~output_o $end
+$var wire 1 A leds[2]~output_o $end
+$var wire 1 B leds[3]~output_o $end
+$var wire 1 C leds[4]~output_o $end
+$var wire 1 D leds[5]~output_o $end
+$var wire 1 E leds[6]~output_o $end
+$var wire 1 F leds[7]~output_o $end
+$var wire 1 G seg7_data[0]~output_o $end
+$var wire 1 H seg7_data[2]~output_o $end
+$var wire 1 I seg7_data[3]~output_o $end
+$var wire 1 J seg7_data[4]~output_o $end
+$var wire 1 K seg7_char1~output_o $end
+$var wire 1 L seg7_char2~output_o $end
+$var wire 1 M sw[0]~input_o $end
+$var wire 1 N sw[1]~input_o $end
+$var wire 1 O sw[2]~input_o $end
+$var wire 1 P sw[3]~input_o $end
+$var wire 1 Q INST1|Mux5~0_combout $end
+$var wire 1 R sw[4]~input_o $end
+$var wire 1 S sw[5]~input_o $end
+$var wire 1 T sw[6]~input_o $end
+$var wire 1 U sw[7]~input_o $end
+$var wire 1 V INST2|Mux5~0_combout $end
+$var wire 1 W clkin_50~input_o $end
+$var wire 1 X INST3|clk_proc:COUNT[0]~0_combout $end
+$var wire 1 Y INST3|clk_proc:COUNT[0]~q $end
+$var wire 1 Z INST3|clk_proc:COUNT[1]~1_combout $end
+$var wire 1 [ INST3|clk_proc:COUNT[1]~q $end
+$var wire 1 \ INST3|clk_proc:COUNT[1]~2 $end
+$var wire 1 ] INST3|clk_proc:COUNT[2]~1_combout $end
+$var wire 1 ^ INST3|clk_proc:COUNT[2]~q $end
+$var wire 1 _ INST3|clk_proc:COUNT[2]~2 $end
+$var wire 1 ` INST3|clk_proc:COUNT[3]~1_combout $end
+$var wire 1 a INST3|clk_proc:COUNT[3]~q $end
+$var wire 1 b INST3|clk_proc:COUNT[3]~2 $end
+$var wire 1 c INST3|clk_proc:COUNT[4]~1_combout $end
+$var wire 1 d INST3|clk_proc:COUNT[4]~q $end
+$var wire 1 e INST3|clk_proc:COUNT[4]~2 $end
+$var wire 1 f INST3|clk_proc:COUNT[5]~1_combout $end
+$var wire 1 g INST3|clk_proc:COUNT[5]~q $end
+$var wire 1 h INST3|clk_proc:COUNT[5]~2 $end
+$var wire 1 i INST3|clk_proc:COUNT[6]~1_combout $end
+$var wire 1 j INST3|clk_proc:COUNT[6]~q $end
+$var wire 1 k INST3|clk_proc:COUNT[6]~2 $end
+$var wire 1 l INST3|clk_proc:COUNT[7]~1_combout $end
+$var wire 1 m INST3|clk_proc:COUNT[7]~q $end
+$var wire 1 n INST3|clk_proc:COUNT[7]~2 $end
+$var wire 1 o INST3|clk_proc:COUNT[8]~1_combout $end
+$var wire 1 p INST3|clk_proc:COUNT[8]~q $end
+$var wire 1 q INST3|clk_proc:COUNT[8]~2 $end
+$var wire 1 r INST3|clk_proc:COUNT[9]~1_combout $end
+$var wire 1 s INST3|clk_proc:COUNT[9]~q $end
+$var wire 1 t INST3|clk_proc:COUNT[9]~2 $end
+$var wire 1 u INST3|clk_proc:COUNT[10]~1_combout $end
+$var wire 1 v INST3|clk_proc:COUNT[10]~q $end
+$var wire 1 w INST3|DOUT_TEMP[1]~0_combout $end
+$var wire 1 x INST1|Mux1~0_combout $end
+$var wire 1 y INST2|Mux1~0_combout $end
+$var wire 1 z INST3|DOUT_TEMP[5]~1_combout $end
+$var wire 1 { INST1|Mux0~0_combout $end
+$var wire 1 | INST2|Mux0~0_combout $end
+$var wire 1 } INST3|DOUT_TEMP[6]~2_combout $end
+$var wire 1 ~ pb[0]~input_o $end
+$var wire 1 !! pb[2]~input_o $end
+$var wire 1 "! pb[1]~input_o $end
+$var wire 1 #! LOGIC_OUTPUT|Mux7~0_combout $end
+$var wire 1 $! LOGIC_OUTPUT|Mux7~1_combout $end
+$var wire 1 %! LOGIC_OUTPUT|Mux6~0_combout $end
+$var wire 1 &! LOGIC_OUTPUT|Mux6~1_combout $end
+$var wire 1 '! LOGIC_OUTPUT|Mux5~0_combout $end
+$var wire 1 (! LOGIC_OUTPUT|Mux5~1_combout $end
+$var wire 1 )! LOGIC_OUTPUT|Mux4~0_combout $end
+$var wire 1 *! LOGIC_OUTPUT|Mux4~1_combout $end
+$var wire 1 +! LOGIC_OUTPUT|Mux3~0_combout $end
+$var wire 1 ,! INST1|Mux6~0_combout $end
+$var wire 1 -! INST2|Mux6~0_combout $end
+$var wire 1 .! INST3|DOUT[0]~0_combout $end
+$var wire 1 /! INST1|Mux4~0_combout $end
+$var wire 1 0! INST2|Mux4~0_combout $end
+$var wire 1 1! INST3|DOUT[2]~2_combout $end
+$var wire 1 2! INST1|Mux3~0_combout $end
+$var wire 1 3! INST2|Mux3~0_combout $end
+$var wire 1 4! INST3|DOUT[3]~3_combout $end
+$var wire 1 5! INST1|Mux2~0_combout $end
+$var wire 1 6! INST2|Mux2~0_combout $end
+$var wire 1 7! INST3|DOUT[4]~4_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x!
+b100 "
+b1110110 #
+1+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+1,
+0-
+14
+z3
+12
+01
+00
+0/
+0.
+05
+16
+x7
+18
+19
+1:
+0;
+z<
+0=
+0>
+1?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+1G
+1H
+0I
+0J
+1K
+0L
+0M
+1N
+1O
+0P
+1Q
+1R
+1S
+1T
+0U
+0V
+xW
+1X
+0Y
+0Z
+0[
+0\
+0]
+0^
+1_
+0`
+0a
+0b
+0c
+0d
+1e
+0f
+0g
+0h
+0i
+0j
+1k
+0l
+0m
+0n
+0o
+0p
+1q
+0r
+0s
+0t
+0u
+0v
+1w
+0x
+1y
+0z
+1{
+0|
+0}
+0~
+1!!
+0"!
+0#!
+1$!
+0%!
+0&!
+0'!
+0(!
+0)!
+0*!
+1+!
+0,!
+0-!
+0.!
+0/!
+00!
+01!
+02!
+13!
+14!
+05!
+16!
+17!
+$end
+#1000000
