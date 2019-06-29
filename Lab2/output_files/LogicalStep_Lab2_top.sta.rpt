@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for LogicalStep_Lab2_top
-Sat Jun 01 18:19:34 2019
+Sat Jun 08 17:59:17 2019
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 
 
@@ -375,7 +375,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
-    Info: Processing started: Sat Jun 01 18:19:32 2019
+    Info: Processing started: Sat Jun 08 17:59:15 2019
 Info: Command: quartus_sta LogicalStep_Lab2 -c LogicalStep_Lab2_top
 Info: qsta_default_script.tcl version: #1
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -408,7 +408,7 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4892 megabytes
-    Info: Processing ended: Sat Jun 01 18:19:34 2019
+    Info: Processing ended: Sat Jun 08 17:59:17 2019
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

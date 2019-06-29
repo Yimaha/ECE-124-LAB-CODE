@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LogicalStep_Lab2_top
-Sat Jun 01 18:19:05 2019
+Sat Jun 08 17:58:50 2019
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 
 
@@ -44,7 +44,7 @@ agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jun 01 18:19:05 2019           ;
+; Analysis & Synthesis Status        ; Successful - Sat Jun 08 17:58:50 2019           ;
 ; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition ;
 ; Revision Name                      ; LogicalStep_Lab2_top                            ;
 ; Top-level Entity Name              ; LogicalStep_Lab2_top                            ;
@@ -297,7 +297,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
-    Info: Processing started: Sat Jun 01 18:18:51 2019
+    Info: Processing started: Sat Jun 08 17:58:36 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LogicalStep_Lab2 -c LogicalStep_Lab2_top
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file logicalstep_lab2_top.vhd
@@ -340,9 +340,9 @@ Info (21057): Implemented 101 device resources after synthesis - the final resou
     Info (21059): Implemented 17 output pins
     Info (21061): Implemented 71 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4990 megabytes
-    Info: Processing ended: Sat Jun 01 18:19:05 2019
+    Info: Peak virtual memory: 4993 megabytes
+    Info: Processing ended: Sat Jun 08 17:58:50 2019
     Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Total CPU time (on all processors): 00:00:22
 
 

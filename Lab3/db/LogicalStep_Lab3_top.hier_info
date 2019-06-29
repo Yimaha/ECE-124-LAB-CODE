@@ -1,0 +1,95 @@
+|LogicalStep_Lab3_top
+clkin_50 => ~NO_FANOUT~
+pb[0] => ~NO_FANOUT~
+pb[1] => ~NO_FANOUT~
+pb[2] => ~NO_FANOUT~
+pb[3] => ~NO_FANOUT~
+sw[0] => Four_Bit_Comparator:A_COMPARE_B.A[0]
+sw[1] => Four_Bit_Comparator:A_COMPARE_B.A[1]
+sw[2] => Four_Bit_Comparator:A_COMPARE_B.A[2]
+sw[3] => Four_Bit_Comparator:A_COMPARE_B.A[3]
+sw[4] => Four_Bit_Comparator:A_COMPARE_B.B[4]
+sw[5] => Four_Bit_Comparator:A_COMPARE_B.B[5]
+sw[6] => Four_Bit_Comparator:A_COMPARE_B.B[6]
+sw[7] => Four_Bit_Comparator:A_COMPARE_B.B[7]
+leds[0] <= Four_Bit_Comparator:A_COMPARE_B.AGB
+leds[1] <= Four_Bit_Comparator:A_COMPARE_B.AEB
+leds[2] <= Four_Bit_Comparator:A_COMPARE_B.ALB
+leds[3] <= <GND>
+leds[4] <= <GND>
+leds[5] <= <GND>
+leds[6] <= <GND>
+leds[7] <= <GND>
+seg7_data[0] <= seg7_data[0].DB_MAX_OUTPUT_PORT_TYPE
+seg7_data[1] <= seg7_data[1].DB_MAX_OUTPUT_PORT_TYPE
+seg7_data[2] <= seg7_data[2].DB_MAX_OUTPUT_PORT_TYPE
+seg7_data[3] <= seg7_data[3].DB_MAX_OUTPUT_PORT_TYPE
+seg7_data[4] <= seg7_data[4].DB_MAX_OUTPUT_PORT_TYPE
+seg7_data[5] <= seg7_data[5].DB_MAX_OUTPUT_PORT_TYPE
+seg7_data[6] <= seg7_data[6].DB_MAX_OUTPUT_PORT_TYPE
+seg7_char1 <= seg7_char1.DB_MAX_OUTPUT_PORT_TYPE
+seg7_char2 <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LogicalStep_Lab3_top|Four_Bit_Comparator:A_COMPARE_B
+A[0] => Single_Bit_Comparator:FOURTH_BIT.A
+A[1] => Single_Bit_Comparator:THRID_BIT.A
+A[2] => Single_Bit_Comparator:SECOND_BIT.A
+A[3] => Single_Bit_Comparator:FIRST_BIT.A
+B[0] => Single_Bit_Comparator:FOURTH_BIT.B
+B[1] => Single_Bit_Comparator:THRID_BIT.B
+B[2] => Single_Bit_Comparator:SECOND_BIT.B
+B[3] => Single_Bit_Comparator:FIRST_BIT.B
+AGB <= AGB.DB_MAX_OUTPUT_PORT_TYPE
+AEB <= AEB.DB_MAX_OUTPUT_PORT_TYPE
+ALB <= ALB.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LogicalStep_Lab3_top|Four_Bit_Comparator:A_COMPARE_B|Single_Bit_Comparator:FIRST_BIT
+A => AGB.IN0
+A => AEB.IN0
+A => ALB.IN0
+B => AEB.IN1
+B => ALB.IN1
+B => AGB.IN1
+AGB <= AGB.DB_MAX_OUTPUT_PORT_TYPE
+AEB <= AEB.DB_MAX_OUTPUT_PORT_TYPE
+ALB <= ALB.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LogicalStep_Lab3_top|Four_Bit_Comparator:A_COMPARE_B|Single_Bit_Comparator:SECOND_BIT
+A => AGB.IN0
+A => AEB.IN0
+A => ALB.IN0
+B => AEB.IN1
+B => ALB.IN1
+B => AGB.IN1
+AGB <= AGB.DB_MAX_OUTPUT_PORT_TYPE
+AEB <= AEB.DB_MAX_OUTPUT_PORT_TYPE
+ALB <= ALB.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LogicalStep_Lab3_top|Four_Bit_Comparator:A_COMPARE_B|Single_Bit_Comparator:THRID_BIT
+A => AGB.IN0
+A => AEB.IN0
+A => ALB.IN0
+B => AEB.IN1
+B => ALB.IN1
+B => AGB.IN1
+AGB <= AGB.DB_MAX_OUTPUT_PORT_TYPE
+AEB <= AEB.DB_MAX_OUTPUT_PORT_TYPE
+ALB <= ALB.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LogicalStep_Lab3_top|Four_Bit_Comparator:A_COMPARE_B|Single_Bit_Comparator:FOURTH_BIT
+A => AGB.IN0
+A => AEB.IN0
+A => ALB.IN0
+B => AEB.IN1
+B => ALB.IN1
+B => AGB.IN1
+AGB <= AGB.DB_MAX_OUTPUT_PORT_TYPE
+AEB <= AEB.DB_MAX_OUTPUT_PORT_TYPE
+ALB <= ALB.DB_MAX_OUTPUT_PORT_TYPE
+
+
