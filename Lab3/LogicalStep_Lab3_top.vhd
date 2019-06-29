@@ -46,13 +46,13 @@ architecture Energy_Monitor of LogicalStep_Lab3_top is
 	
 	component Desired_Temp_MUX port (
 	Desired_Temp:	in std_logic_vector(7 downto 4);
-	CONTROL		: 	in std_logic_vector(0 downto 0);
+	CONTROL		: 	in std_logic;
 	OUTPUT		: 	OUT std_logic_vector(3 downto 0)
    ); 
    end component;
 
 	component Energy_Monitor_Control_Logic port (
-	AGB, AEB, ALB, vacation, window, door : in std_logic;
+	AGB, ALB, vacation, window, door : in std_logic;
 	led0, led2, led3, led4, led5, led7: out std_logic
 	);
 	end component;
@@ -60,7 +60,7 @@ architecture Energy_Monitor of LogicalStep_Lab3_top is
 ------------------------------------------------------------------
 	
 	
--- Create any signals, or temporary variables to be used
+-- Create any signals, or temporary variables to be used`
 	signal INPUT_A : std_logic_vector(3 downto 0);
 	signal INPUT_B : std_logic_vector(3 downto 0);
 	signal seg7_A		: std_logic_vector(6 downto 0);
@@ -72,17 +72,24 @@ architecture Energy_Monitor of LogicalStep_Lab3_top is
 -- Here the circuit begins
 
 begin
- 
+
  INPUT_A <= sw(3 downto 0);
- VACATION_MODE: Desired_Temp_Mux port map(sw(7 downto 4), pb(3 downto 3), INPUT_B);
+ --mux that choose vacation mode if pb 3 is pressed, otherwise just use regular input_B
+ VACATION_MODE: Desired_Temp_Mux port map(sw(7 downto 4), pb(3), INPUT_B);
+ --Seven segment display
  INST1: SevenSegment port map(INPUT_A, seg7_A);
  INST2: SevenSegment port map(INPUT_B, seg7_B);
  INST3: segment7_mux port map(clkin_50, seg7_A, seg7_B, seg7_data, seg7_char2, seg7_char1);
+ --comparing the value of a and b
  A_COMPARE_B : Four_Bit_Comparator port map(INPUT_A, INPUT_B, AGB, AEB, ALB);
- ENERGY_MONITOR : Energy_Monitor_Control_Logic port map(AGB, AEB, ALB, pb(3), pb(1), pb(0), leds(0),leds(2),leds(3),leds(4),leds(5),leds(7));
-
+ --energy-montitor, which handles the output of the leds based on the value of a and b
+ ENERGY_MONITOR : Energy_Monitor_Control_Logic port map(AGB, ALB, pb(3), pb(1), pb(0), leds(0),leds(2),leds(3),leds(4),leds(5),leds(7));
+ 
+ --same temperature always output 1 to leds1, no editional condition is required
  leds(1) <= AEB;
  
+ 
+ -- assign variable for testbench
  AEQB <= AEB;
  ALEB <= AEB OR ALB;
  AGEB <= AEB OR AGB;
@@ -116,7 +123,8 @@ begin
 	LE_PASS :='0';
 	
 	END IF;
-	
+	--output test result to leds 6, only false if you use the Vacation Mode, Input_B and the MCTest Mode together
+	--since the input being passed to the test bench is still limited to sw, but the AEQB, AGEB, and ALEB could potentially depends on vacation mode too
 	TEST_PASS <= (not pb(2)) AND (EQ_PASS OR GE_PASS OR LE_PASS);
 	leds(6) <= TEST_PASS;
 end process;

@@ -6,7 +6,7 @@ use ieee.numeric_std.all;
 
 entity Desired_Temp_MUX is port (
 	Desired_Temp: in std_logic_vector(3 downto 0);
-	CONTROL: in  std_logic_vector(0 downto 0);
+	CONTROL: in  std_logic;
 	OUTPUT: OUT std_logic_vector(3 downto 0)
 ); 
 end Desired_Temp_MUX;
@@ -18,7 +18,7 @@ begin
 
 PROCESS(CONTROL) is 
 begin 
-	IF(CONTROL = "1") THEN
+	IF(CONTROL = '1') THEN
 	OUTPUT <= Desired_Temp;
 	ELSE
 	OUTPUT <= "0100";

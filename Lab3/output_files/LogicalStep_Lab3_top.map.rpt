@@ -1,5 +1,5 @@
 Analysis & Synthesis report for LogicalStep_Lab3_top
-Sat Jun 29 16:03:12 2019
+Sat Jun 29 16:18:29 2019
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 
 
@@ -43,7 +43,7 @@ agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Jun 29 16:03:12 2019           ;
+; Analysis & Synthesis Status        ; Successful - Sat Jun 29 16:18:29 2019           ;
 ; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition ;
 ; Revision Name                      ; LogicalStep_Lab3_top                            ;
 ; Top-level Entity Name              ; LogicalStep_Lab3_top                            ;
@@ -284,7 +284,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
-    Info: Processing started: Sat Jun 29 16:02:57 2019
+    Info: Processing started: Sat Jun 29 16:18:15 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off LogicalStep_Lab3 -c LogicalStep_Lab3_top
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file logicalstep_lab3_top.vhd
@@ -310,17 +310,17 @@ Info (12021): Found 2 design units, including 1 entities, in source file output_
     Info (12022): Found design unit 1: Energy_Monitor_Control_Logic-Energy_Monitor File: N:/ECE-124/Lab3/output_files/Energy_Monitor_Control_Logic.vhd Line: 10
     Info (12023): Found entity 1: Energy_Monitor_Control_Logic File: N:/ECE-124/Lab3/output_files/Energy_Monitor_Control_Logic.vhd Line: 5
 Info (12127): Elaborating entity "LogicalStep_Lab3_top" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at LogicalStep_Lab3_top.vhd(121): signal "TEST_PASS" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: N:/ECE-124/Lab3/LogicalStep_Lab3_top.vhd Line: 121
-Info (12128): Elaborating entity "Desired_Temp_MUX" for hierarchy "Desired_Temp_MUX:VACATION_MODE" File: N:/ECE-124/Lab3/LogicalStep_Lab3_top.vhd Line: 77
+Warning (10492): VHDL Process Statement warning at LogicalStep_Lab3_top.vhd(122): signal "TEST_PASS" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: N:/ECE-124/Lab3/LogicalStep_Lab3_top.vhd Line: 122
+Info (12128): Elaborating entity "Desired_Temp_MUX" for hierarchy "Desired_Temp_MUX:VACATION_MODE" File: N:/ECE-124/Lab3/LogicalStep_Lab3_top.vhd Line: 78
 Warning (10492): VHDL Process Statement warning at Desired_Temp_Mux.vhd(22): signal "Desired_Temp" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: N:/ECE-124/Lab3/output_files/Desired_Temp_Mux.vhd Line: 22
-Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:INST1" File: N:/ECE-124/Lab3/LogicalStep_Lab3_top.vhd Line: 78
-Info (12128): Elaborating entity "segment7_mux" for hierarchy "segment7_mux:INST3" File: N:/ECE-124/Lab3/LogicalStep_Lab3_top.vhd Line: 80
-Info (12128): Elaborating entity "Four_Bit_Comparator" for hierarchy "Four_Bit_Comparator:A_COMPARE_B" File: N:/ECE-124/Lab3/LogicalStep_Lab3_top.vhd Line: 81
+Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:INST1" File: N:/ECE-124/Lab3/LogicalStep_Lab3_top.vhd Line: 79
+Info (12128): Elaborating entity "segment7_mux" for hierarchy "segment7_mux:INST3" File: N:/ECE-124/Lab3/LogicalStep_Lab3_top.vhd Line: 81
+Info (12128): Elaborating entity "Four_Bit_Comparator" for hierarchy "Four_Bit_Comparator:A_COMPARE_B" File: N:/ECE-124/Lab3/LogicalStep_Lab3_top.vhd Line: 82
 Warning (12125): Using design file single_bit_comparator.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: Single_Bit_Comparator-Comparator File: N:/ECE-124/Lab3/single_bit_comparator.vhd Line: 12
     Info (12023): Found entity 1: Single_Bit_Comparator File: N:/ECE-124/Lab3/single_bit_comparator.vhd Line: 6
 Info (12128): Elaborating entity "Single_Bit_Comparator" for hierarchy "Four_Bit_Comparator:A_COMPARE_B|Single_Bit_Comparator:FIRST_BIT" File: N:/ECE-124/Lab3/Four_Bit_Comparator.vhd Line: 64
-Info (12128): Elaborating entity "Energy_Monitor_Control_Logic" for hierarchy "Energy_Monitor_Control_Logic:ENERGY_MONITOR" File: N:/ECE-124/Lab3/LogicalStep_Lab3_top.vhd Line: 82
+Info (12128): Elaborating entity "Energy_Monitor_Control_Logic" for hierarchy "Energy_Monitor_Control_Logic:ENERGY_MONITOR" File: N:/ECE-124/Lab3/LogicalStep_Lab3_top.vhd Line: 83
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -329,9 +329,9 @@ Info (21057): Implemented 89 device resources after synthesis - the final resour
     Info (21059): Implemented 17 output pins
     Info (21061): Implemented 59 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4992 megabytes
-    Info: Processing ended: Sat Jun 29 16:03:12 2019
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 4993 megabytes
+    Info: Processing ended: Sat Jun 29 16:18:29 2019
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:23
 
 

@@ -12,6 +12,7 @@ end Single_Bit_Comparator;
 architecture Comparator of Single_Bit_Comparator is
 
 begin
+-- value determined by the truth table, which represent AGB, AEB, ALB
 AGB <= A AND (NOT B);
 AEB <= NOT(A XOR B);
 ALB <= (NOT A) AND B;

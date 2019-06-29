@@ -61,11 +61,13 @@ begin
 	B_3 <= B(1);
 	B_4 <= B(0);
 	
+	--single bit comparator on every bit (0 - 4, 1 - 5, 2 - 6, 3 - 7)
 	FIRST_BIT	: Single_Bit_Comparator port map(A_1, B_1, A_1GB_1, A_1EB_1, A_1LB_1);
 	SECOND_BIT	: Single_Bit_Comparator port map(A_2, B_2, A_2GB_2, A_2EB_2, A_2LB_2);
 	THRID_BIT	: Single_Bit_Comparator port map(A_3, B_3, A_3GB_3, A_3EB_3, A_3LB_3);
 	FOURTH_BIT	: Single_Bit_Comparator port map(A_4, B_4, A_4GB_4, A_4EB_4, A_4LB_4);
 	
+	--based on the result, determine the logic, only one of them should be 0 while the other is false
 	AGB <= (A_1GB_1) OR (A_1EB_1 AND A_2GB_2) or (A_1EB_1 AND A_2EB_2 AND A_3GB_3) or (A_1EB_1 AND A_2EB_2 AND A_3EB_3 AND A_4GB_4);
 	ALB <= (A_1LB_1) OR (A_1EB_1 AND A_2LB_2) or (A_1EB_1 AND A_2EB_2 AND A_3LB_3) or (A_1EB_1 AND A_2EB_2 AND A_3EB_3 AND A_4LB_4);
 	AEB <= A_1EB_1 AND A_2EB_2 AND A_3EB_3 AND A_4EB_4;

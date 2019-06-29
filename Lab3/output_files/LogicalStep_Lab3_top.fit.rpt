@@ -1,5 +1,5 @@
 Fitter report for LogicalStep_Lab3_top
-Sat Jun 29 16:03:21 2019
+Sat Jun 29 16:18:39 2019
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 
 
@@ -67,7 +67,7 @@ agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Sat Jun 29 16:03:21 2019           ;
+; Fitter Status                      ; Successful - Sat Jun 29 16:18:38 2019           ;
 ; Quartus Prime Version              ; 15.1.0 Build 185 10/21/2015 SJ Standard Edition ;
 ; Revision Name                      ; LogicalStep_Lab3_top                            ;
 ; Top-level Entity Name              ; LogicalStep_Lab3_top                            ;
@@ -1314,8 +1314,8 @@ Warning (14579): Pin sw[4] uses I/O standard 3.3-V LVCMOS located at 8 will have
 Warning (14579): Pin sw[1] uses I/O standard 3.3-V LVCMOS located at 13 will have lower speed performance due to its location.  Refer to the product datasheet for the supported I/O speed.
 Info (144001): Generated suppressed messages file N:/ECE-124/Lab3/output_files/LogicalStep_Lab3_top.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 90 warnings
-    Info: Peak virtual memory: 5607 megabytes
-    Info: Processing ended: Sat Jun 29 16:03:22 2019
+    Info: Peak virtual memory: 5610 megabytes
+    Info: Processing ended: Sat Jun 29 16:18:39 2019
     Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:06
 
